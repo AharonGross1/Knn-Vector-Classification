@@ -1,17 +1,24 @@
-part 4 of advanced programming class
+# VectorVision
 
-In this assignment the program recievs input from the client indicating how and where to run a knn algorithm.
-The algorithm classifies an unclassified vector according to a list with classified vectors.
-The k of the algorithm - the number of the k closest classified vectors to classify the vector with, is given as input.
-The client may enter a chosen distance calculation metric. He may choos one of the metrics below:
-Minkowski - MIN
-Euclidean - AUC
-Manhattan - MAN
-Chebyshev - CHB
-Canberra - CAN
-## Features
+VectorVision is an advanced software solution designed to deliver precise vector classification using the K-Nearest Neighbors (KNN) algorithm. This powerful tool receives input from the client, specifying how and where to run the KNN algorithm for optimal performance.
 
-Please note that the k param needs to be larger then the number of vectors in the classified file.
+## Key Features
+
+- **Customizable K Parameter**: Users can input the value of 'k', representing the number of nearest classified vectors used to determine the classification of an unclassified vector. The value of 'k' must exceed the number of vectors in the classified dataset, ensuring accurate classification.
+- **Flexible Distance Metrics**: VectorVision supports a variety of distance calculation metrics to cater to different analytical needs. Users can choose from:
+  - Minkowski (MIN)
+  - Euclidean (AUC)
+  - Manhattan (MAN)
+  - Chebyshev (CHB)
+  - Canberra (CAN)
+  
+## Installation and Usage
+
+### Compilation
+
+To compile the project, use the following command:
+
+```bash make```
 
 ## Installation
 to compile
