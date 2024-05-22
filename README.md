@@ -1,11 +1,11 @@
-# VectorVision
+# VectorVision: Precise Vector Classification Software
 
-VectorVision is an advanced software solution designed to deliver precise vector classification using the K-Nearest Neighbors (KNN) algorithm. This powerful tool receives input from the client, specifying how and where to run the KNN algorithm for optimal performance.
+VectorVision stands as a sophisticated software solution meticulously crafted to deliver pinpoint vector classification using the K-Nearest Neighbors (KNN) algorithm. Empowering users with unparalleled precision, this potent tool seamlessly integrates client inputs to orchestrate the execution of the KNN algorithm, ensuring optimal performance and accuracy.
 
 ## Key Features
 
-- **Customizable K Parameter**: Users can input the value of 'k', representing the number of nearest classified vectors used to determine the classification of an unclassified vector. The value of 'k' must exceed the number of vectors in the classified dataset, ensuring accurate classification.
-- **Flexible Distance Metrics**: VectorVision supports a variety of distance calculation metrics to cater to different analytical needs. Users can choose from:
+- **Customizable K Parameter**: Users wield the power to customize the 'k' parameter, dictating the number of nearest classified vectors utilized to ascertain the classification of an unclassified vector. The 'k' value must surpass the count of vectors within the classified dataset, guaranteeing precise classification.
+- **Flexible Distance Metrics**: VectorVision offers a spectrum of distance calculation metrics, catering to diverse analytical requirements. Users can effortlessly select from a range of metrics, including:
   - Minkowski (MIN)
   - Euclidean (AUC)
   - Manhattan (MAN)
@@ -13,38 +13,25 @@ VectorVision is an advanced software solution designed to deliver precise vector
   - Canberra (CAN)
   
 ## Installation and Usage
+### Installation
+Begin by cloning the code repository from GitHub.
 
 ### Compilation
+To compile the project, navigate to the project directory, open the command prompt, and execute the following commands:
+```bash``` 
+```make```
 
-To compile the project, use the following command:
+### Server
+Initiate a server by opening a port using the following command in the command prompt:
+```./Server {port}```
 
-```bash make```
+### Client
+In the project directory, open a new command prompt window and input the following commands:
+```bash```
+```./client {ip} {ServerPort}```
 
-## Installation
-to compile
-```bash
-make
-```
-to run the Server
-```bash
- ./Server {port}
-```
+For local testing, it's recommended to use the IP address 127.0.0.1.
 
-
-to run the clinet 
-```bash
- ./client {ip} {port}
-```
-
-It is recommended to use IP 127.0.0.1
-
-
-exsmple:
-```bash
-make
-./Server 44589
-./client 127.0.0.1 44589
-```
-## important things:
-1.The program needs two free ports,the port you write in the coomand line and the port after him.(For example: ./Server 12345. so the server needs the ports 12345 and 12346)
-2.It is recommended to read the files from the folder names "fiels",so if you want read new file move him to this folder.
+## <br /><br />Authors
+- [Aharon Gross](https://github.com/AharonGross1)
+- [Asaf Rozen](https://www.github.com/asafaar)
